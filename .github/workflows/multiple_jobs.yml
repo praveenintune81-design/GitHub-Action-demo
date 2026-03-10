@@ -1,0 +1,17 @@
+name: Hello Praveen
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build step
+        run: echo "A demo build"
+  test: runs-on:ubuntu-latest
+  steps:
+    - name: Test phase
+      run: echo "running test cases"
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the app
+        run: echo "deploying the app"
