@@ -1,17 +1,17 @@
 name: multiple_jobs
 on: workflow_dispatch
 jobs:
-  build:
+  build:   # this is my frist Job 
     runs-on: ubuntu-latest
     steps:
       - name: Build step
         run: echo "A demo build"
-  test:
+  test:  # this is my second Job 
     runs-on: ubuntu-latest
     steps:
       - name: Test phase
         run: echo "running test cases"
-  deploy:
+  deploy:  # this is my third Job 
     runs-on: ubuntu-latest
     steps:
       - name: deploy the app
